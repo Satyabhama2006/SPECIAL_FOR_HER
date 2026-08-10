@@ -1,0 +1,342 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#90a2cc;
+
+    overflow:hidden;
+
+    font-family:Arial,sans-serif;
+
+}
+
+#startPage{
+
+    width:100vw;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.heart{
+
+    font-size:120px;
+
+    cursor:pointer;
+
+    animation:beat 1s infinite;
+
+}
+
+h2{
+
+    color:rgb(24, 17, 17);
+
+    margin-top:30px;
+
+    font-size:28px;
+
+}
+
+@keyframes beat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+#welcomePage{
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#ffb6c1,#ffd1dc);
+
+    text-align:center;
+
+}
+
+#welcomePage h1{
+
+    color:rgb(188, 158, 158);
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+#welcomePage p{
+
+    color:rgb(219, 154, 141);
+    font-size:24px;
+
+}
+
+button{
+
+    padding:15px 35px;
+
+    margin:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+#questionPage,
+#correctPage,
+#birthdayPage{
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#967985,#83616c);
+
+    text-align:center;
+
+}
+
+#questionPage h1,
+#correctPage h1,
+#birthdayPage h1{
+
+    color:rgb(10, 5, 5);
+    font-size:60px;
+
+}
+
+#questionPage h2,
+#correctPage h2,
+#birthdayPage h2{
+
+    color:rgb(144, 171, 211);
+
+}
+
+#questionPage h3{
+
+    color:#444;
+    font-size:32px;
+
+}
+
+.familyPic{
+
+    width:300px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(188, 126, 126, 0.3);
+
+}
+
+#galleryPage,
+#sorryPage{
+
+    width:100vw;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,hsla(330, 24%, 81%, 0.121),#f6f9f7);
+
+    text-align:center;
+
+}
+
+#galleryImage,
+#goodImage{
+
+    max-width:80%;
+
+    max-height:70vh;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+    background:#eeece8;
+
+}
+
+
+#galleryCaption{
+
+    width:70%;
+
+    font-size:24px;
+
+    color:#444;
+
+    margin-bottom:20px;
+
+}
+
+#goodGallery,
+#letterPage,
+#finalPage{
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#d4aac2,#e4ced6);
+
+}
+
+#goodImage{
+
+    max-width:80%;
+
+    max-height:70vh;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+    background:rgb(107, 83, 83);
+
+    margin:20px;
+
+}
+
+#goodCaption{
+
+    width:70%;
+
+    font-size:24px;
+
+    color:#444;
+
+}
+
+.letter{
+
+    width:70%;
+
+    background:rgb(170, 174, 219);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+    line-height:1.8;
+
+}
+
+#balloons{
+
+    font-size:60px;
+
+    margin-top:30px;
+
+    animation:floatBalloons 4s ease-in-out infinite;
+
+}
+
+@keyframes floatBalloons{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+button:hover{
+
+transform:scale(1.1);
+
+transition:.3s;
+
+}
